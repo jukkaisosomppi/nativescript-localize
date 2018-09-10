@@ -54,6 +54,9 @@ export class ConverterAndroid extends ConverterCommon {
         strings += `  <string name="app_name">${encodedValue}</string>\n`;
         strings += `  <string name="title_activity_kimera">${encodedValue}</string>\n`;
       }
+      if (key === "facebook_app_id") {
+        strings += `  <string name="facebook_app_id">${encodedValue}</string>\n`;
+      }
     });
     strings += "</resources>\n";
     const resourceFilePath = path.join(languageResourcesDir, "strings.xml");
